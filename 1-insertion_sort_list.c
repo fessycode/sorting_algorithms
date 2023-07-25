@@ -51,7 +51,7 @@ void insertion_sort_list(listint_t **list)
 
 			if (i == NULL)
 				*list = prev;
-			if (node->nd < prev->nd)
+			if (node->n < prev->n)
 			{
 				node->next = prev;
 				node->prev = i;

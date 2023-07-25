@@ -22,7 +22,7 @@ listint_t *create_listint(const int *array, size_t size)
         node = malloc(sizeof(*node));
         if (!node)
             return (NULL);
-        tmp = (int *)&node->nd;
+        tmp = (int *)&node->n;
         *tmp = array[size];
         node->next = list;
         node->prev = NULL;
